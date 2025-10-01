@@ -1,0 +1,5 @@
+{
+  "name": "FlutterFactory",
+  "description": "Um gerador de projetos Flutter alimentado por IA. Descreva e desenhe sua ideia de aplicativo e obtenha uma estrutura de projeto completa, código e orientação passo a passo de um instrutor de IA semelhante ao TARS.",
+  "requestFramePermissions": []
+}
