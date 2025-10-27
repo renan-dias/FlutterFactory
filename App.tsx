@@ -348,19 +348,26 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
     const fileInputRef = React.useRef<HTMLInputElement>(null);
     const [isDrawing, setIsDrawing] = useState(false);
     
-    const addImageData = (newData: { data: string, mimeType: string }) => {
+    const addImageData = useCallback((newData: { data: string, mimeType: string }) => {
         setImagesData(prev => [...prev, newData]);
-    };
+    }, [setImagesData]);
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         const files = e.target.files;
         if (files) {
-            for(const file of Array.from(files)) {
-                if (file.type.startsWith('image/')) {
+            // FIX: Replaced for...of with a C-style for loop to ensure correct type inference for `file` from FileList.
+            for (let i = 0; i < files.length; i++) {
+                const file = files.item(i);
+                if (file && file.type.startsWith('image/')) {
                     const reader = new FileReader();
-                    reader.onloadend = () => {
-                        const base64String = (reader.result as string).split(',')[1];
-                        addImageData({ data: base64String, mimeType: file.type });
+                    reader.onload = () => {
+                        const result = reader.result;
+                        if (typeof result === 'string') {
+                            const base64String = result.split(',')[1];
+                            if (base64String) {
+                                addImageData({ data: base64String, mimeType: file.type });
+                            }
+                        }
                     };
                     reader.readAsDataURL(file);
                 }
@@ -371,32 +378,39 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
     const onCanvasDraw = (dataUrl: string) => {
         if(!dataUrl) return;
         const base64String = dataUrl.split(',')[1];
-        addImageData({ data: base64String, mimeType: 'image/png'});
+        if (base64String) {
+            addImageData({ data: base64String, mimeType: 'image/png'});
+        }
     };
 
     const handlePaste = useCallback((e: ClipboardEvent) => {
         const items = e.clipboardData?.items;
         if (!items) return;
-        // FIX: Use a for...of loop for better type inference on the iterable DataTransferItemList.
-        for (const item of items) {
-            if (item.type.indexOf('image') !== -1) {
+        
+        // FIX: Replaced for...of with a C-style for loop to ensure correct type inference for `item` from DataTransferItemList.
+        for (let i = 0; i < items.length; i++) {
+            const item = items[i];
+            if (item.kind === 'file' && item.type.startsWith('image/')) {
                 const blob = item.getAsFile();
-                // FIX: Use `instanceof File` as a type guard to ensure `blob` is treated as a File object.
-                // This resolves type errors with `blob.type` and `readAsDataURL(blob)` that occur when
-                // the compiler incorrectly infers the type as `unknown`.
-                if (blob instanceof File) {
+                
+                if (blob) {
                     const reader = new FileReader();
                     reader.onload = (event) => {
-                        const base64String = (event.target?.result as string).split(',')[1];
-                        addImageData({ data: base64String, mimeType: blob.type });
+                        const result = event.target?.result;
+                        if (typeof result === 'string') {
+                            const base64String = result.split(',')[1];
+                            if(base64String) {
+                                addImageData({ data: base64String, mimeType: blob.type });
+                            }
+                        }
                     };
                     reader.readAsDataURL(blob);
                     e.preventDefault();
-                    break;
+                    return; // Process only the first image
                 }
             }
         }
-    }, [setImagesData]);
+    }, [addImageData]);
 
     useEffect(() => {
         window.addEventListener('paste', handlePaste);
