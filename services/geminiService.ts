@@ -2,12 +2,6 @@ import { GoogleGenAI } from '@google/genai';
 import { RESPONSE_SCHEMA } from '../constants';
 import type { GeminiProjectOutput, Personality } from '../types';
 
-if (!process.env.API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 const base64ToGeminiPart = (base64Data: string, mimeType: string) => {
   return {
     inlineData: {
@@ -23,6 +17,12 @@ export const generateFlutterProject = async (
   personality: Personality,
   locale: 'pt-br' | 'en'
 ): Promise<GeminiProjectOutput> => {
+  if (!process.env.API_KEY) {
+    throw new Error("API_KEY environment variable not set. Please configure it in your Vercel project settings.");
+  }
+  
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+
   try {
     const parts: ({ text: string } | { inlineData: { data: string; mimeType: string } })[] = [{ text: `App Description: ${description}` }];
 

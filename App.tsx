@@ -1,4 +1,5 @@
 
+
 import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import type { GeminiProjectOutput, Personality, ProjectFile, FileTreeNode } from './types';
 import { PERSONALITIES } from './constants';
@@ -376,9 +377,10 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
     const handlePaste = useCallback((e: ClipboardEvent) => {
         const items = e.clipboardData?.items;
         if (!items) return;
-        for (let i = 0; i < items.length; i++) {
-            if (items[i].type.indexOf('image') !== -1) {
-                const blob = items[i].getAsFile();
+        // FIX: Use a for...of loop for better type inference on the iterable DataTransferItemList.
+        for (const item of items) {
+            if (item.type.indexOf('image') !== -1) {
+                const blob = item.getAsFile();
                 // FIX: Use `instanceof File` as a type guard to ensure `blob` is treated as a File object.
                 // This resolves type errors with `blob.type` and `readAsDataURL(blob)` that occur when
                 // the compiler incorrectly infers the type as `unknown`.
