@@ -1,6 +1,6 @@
 import React, { useState, useCallback, useEffect, useMemo, useRef } from 'react';
 import { GoogleGenAI, Chat } from '@google/genai';
-import type { GeminiProjectOutput, Personality, ProjectFile, FileTreeNode } from './types';
+import type { GeminiProjectOutput, Personality, ProjectFile, FileTreeNode, ProjectHistoryItem } from './types';
 import { PERSONALITIES } from './constants';
 import { generateFlutterProject, generateTutorialHtml } from './services/geminiService';
 import { Icon } from './components/Icon';
@@ -160,7 +160,7 @@ const App: React.FC = () => {
     const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState<string | null>(null);
     const [generatedProject, setGeneratedProject] = useState<GeminiProjectOutput | null>(null);
-    const [history, setHistory] = useState<GeminiProjectOutput[]>([]);
+    const [history, setHistory] = useState<ProjectHistoryItem[]>([]);
 
     const [description, setDescription] = useState('');
     const [personality, setPersonality] = useState<Personality>(PERSONALITIES[0]);
@@ -198,9 +198,18 @@ const App: React.FC = () => {
         try {
             const project = await generateFlutterProject(description, imagesData, personality, locale);
             setGeneratedProject(project);
+
+            const historyItem: ProjectHistoryItem = {
+                ...project,
+                prompt: {
+                    description,
+                    imagesData,
+                    personalityId: personality.id,
+                },
+            };
             
             setHistory(prevHistory => {
-                const newHistory = [project, ...prevHistory.filter(p => p.projectName !== project.projectName)].slice(0, 10); // Keep latest 10, prevent duplicates
+                const newHistory = [historyItem, ...prevHistory.filter(p => p.projectName !== project.projectName)].slice(0, 10); // Keep latest 10, prevent duplicates
                 localStorage.setItem('flutterFactoryHistory', JSON.stringify(newHistory));
                 return newHistory;
             });
@@ -221,14 +230,19 @@ const App: React.FC = () => {
     const handleReturnToInput = () => {
       setGeneratedProject(null);
       setSelectedFile(null);
-      setDescription('');
-      setImagesData([]);
       setError(null);
       setLastChangeInfo(null);
       setView('input');
     }
 
-    const handleLoadProject = (projectToLoad: GeminiProjectOutput) => {
+    const handleLoadProject = (projectToLoad: ProjectHistoryItem) => {
+        if (projectToLoad.prompt) {
+            setDescription(projectToLoad.prompt.description);
+            setImagesData(projectToLoad.prompt.imagesData);
+            const loadedPersonality = PERSONALITIES.find(p => p.id === projectToLoad.prompt.personalityId) || PERSONALITIES[0];
+            setPersonality(loadedPersonality);
+        }
+        
         setGeneratedProject(projectToLoad);
         if (projectToLoad.files.length > 0) {
             const mainFile = projectToLoad.files.find(f => f.path.endsWith('main.dart')) || projectToLoad.files[0];
@@ -446,8 +460,8 @@ interface InputViewProps {
   imagesData: { data: string, mimeType: string }[];
   setImagesData: (data: { data: string, mimeType: string }[]) => void;
   error: string | null;
-  history: GeminiProjectOutput[];
-  onLoadProject: (project: GeminiProjectOutput) => void;
+  history: ProjectHistoryItem[];
+  onLoadProject: (project: ProjectHistoryItem) => void;
   onClearHistory: () => void;
   onDeleteItem: (projectName: string) => void;
 }

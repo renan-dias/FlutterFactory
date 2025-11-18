@@ -27,6 +27,14 @@ export interface GeminiProjectOutput {
   learningPath: LearningStep[];
 }
 
+export interface ProjectHistoryItem extends GeminiProjectOutput {
+  prompt: {
+    description: string;
+    imagesData: { data: string; mimeType: string }[];
+    personalityId: string;
+  }
+}
+
 export interface FileTreeNode {
   name: string;
   path: string;
