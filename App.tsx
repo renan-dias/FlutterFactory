@@ -11,92 +11,98 @@ const translations = {
   'pt-br': {
     title: 'Flutter',
     title_factory: 'Factory',
-    subtitle: 'Descreva e esboce sua ideia de aplicativo. Nossa IA, inspirada no TARS, irá gerar o projeto Flutter completo e guiá-lo em sua construção.',
-    visualize_app: '1. Visualize seu App',
-    describe_app: '2. Descreva seu App',
-    choose_instructor: '3. Escolha seu Instrutor',
-    generate: 'GERAR',
-    error_empty_input: 'Forneça uma descrição ou uma imagem.',
-    loading_title: 'GERANDO PROJETO',
-    loading_subtitle: 'TARS está analisando seu conceito... \n Montando a arquitetura Flutter... \n Escrevendo o código base... Por favor, aguarde.',
+    subtitle: 'Transforme suas ideias em realidade. IA avançada para gerar arquitetura, código e guias completos.',
+    visualize_app: '1. Visualizar',
+    describe_app: '2. Descrever',
+    choose_instructor: '3. Instrutor',
+    generate: 'INICIAR PROJETO',
+    error_empty_input: 'Por favor, forneça uma descrição ou uma imagem para começar.',
+    loading_title: 'PROCESSANDO',
+    loading_subtitle: 'Analisando requisitos...\nGerando arquitetura Flutter...\nEscrevendo código limpo...',
     new_project: 'Novo Projeto',
     explorer: 'Explorador',
-    select_file_prompt: 'Selecione um arquivo para ver seu conteúdo',
-    file_explanation: 'Análise do Arquivo',
-    learning_path: 'Trilha de Aprendizagem',
+    select_file_prompt: 'Selecione um arquivo para visualizar o código',
+    file_explanation: 'Análise Técnica',
+    learning_path: 'Guia de Implementação',
     no_file_selected: 'Nenhum arquivo selecionado',
-    analysis_of: 'Análise',
-    select_file_for_analysis: 'Selecione um arquivo para ver a análise do TARS sobre seu propósito e código.',
-    project_mission: 'Missão do Projeto',
-    personality_tars_name: 'TARS (Interestelar)',
-    personality_google_name: 'Engenheiro(a) Google',
-    personality_fun_name: 'Desenvolvedor(a) Criativo',
+    analysis_of: 'Análise de',
+    select_file_for_analysis: 'Selecione um arquivo para ver a explicação detalhada do propósito e estrutura do código.',
+    project_mission: 'Objetivo do Projeto',
+    personality_tars_name: 'TARS',
+    personality_google_name: 'Engenheiro Google',
+    personality_fun_name: 'Mentor Criativo',
     draw: 'Desenhar',
-    upload: 'Carregar',
+    upload: 'Upload',
     paste: 'Colar',
     clear: 'Limpar',
-    input_placeholder: 'Ex: "Um app de lista de tarefas simples com categorias. Usuários podem adicionar, marcar e deletar tarefas. Quero um design limpo e minimalista."',
-    upload_prompt: 'Arraste e solte ou clique para carregar',
-    select_file: 'Selecionar Arquivo',
-    paste_prompt: 'Pressione Ctrl+V para colar uma imagem.',
-    draw_in_modal_title: 'Desenhe o Mockup do seu App',
+    input_placeholder: 'Descreva seu app em detalhes. Ex: "Um app de finanças pessoais com dashboard de gastos, lista de transações e categorias editáveis. Estilo moderno e escuro."',
+    upload_prompt: 'Arraste imagens ou clique para upload',
+    select_file: 'Selecionar',
+    paste_prompt: 'Ctrl+V para colar',
+    draw_in_modal_title: 'Esboço Rápido',
     close: 'Fechar',
-    save_drawing: 'Salvar Desenho',
-    visualize_info: 'Use ferramentas como Figma, Sketch, ou até mesmo a foto de um rascunho em um guardanapo para enviar o protótipo do seu app.',
-    backend_suggestion: 'Sugestão de Backend',
-    project_history: 'Histórico de Projetos',
-    clear_history: 'Limpar Histórico',
-    chat: 'Chat',
-    export_pdf: 'Exportar PDF',
-    generating_pdf: 'Gerando...',
-    ask_for_changes: 'Peça por alterações...',
-    apply_changes: 'Aplicar Alterações',
-    ai_suggestion: 'IA sugere uma atualização para',
+    save_drawing: 'Confirmar',
+    visualize_info: 'Envie mockups, rascunhos ou diagramas para guiar a geração.',
+    backend_suggestion: 'Arquitetura Sugerida',
+    project_history: 'Projetos Recentes',
+    clear_history: 'Limpar',
+    chat: 'Assistente',
+    export_pdf: 'PDF Tutorial',
+    generating_pdf: 'Gerando PDF...',
+    ask_for_changes: 'Solicite alterações ou tire dúvidas...',
+    apply_changes: 'Aplicar Alteração',
+    ai_suggestion: 'Sugestão de alteração em',
+    personality_desc_tars: 'Lógico, conciso e direto ao ponto. Foco em eficiência.',
+    personality_desc_google: 'Padrões industriais, Clean Architecture e melhores práticas.',
+    personality_desc_fun: 'Didático, encorajador e focado em aprendizado rápido.',
   },
   'en': {
     title: 'Flutter',
     title_factory: 'Factory',
-    subtitle: 'Describe and sketch your app idea. Our AI, inspired by TARS, will generate the complete Flutter project and guide you through building it.',
-    visualize_app: '1. Visualize Your App',
-    describe_app: '2. Describe Your App',
-    choose_instructor: '3. Choose Your Instructor',
-    generate: 'GENERATE',
-    error_empty_input: 'Please provide a description or an image.',
-    loading_title: 'GENERATING PROJECT',
-    loading_subtitle: 'TARS is analyzing your concept... \n Assembling Flutter architecture... \n Writing boilerplate... Please wait.',
+    subtitle: 'Turn ideas into reality. Advanced AI to generate architecture, code, and complete guides.',
+    visualize_app: '1. Visualize',
+    describe_app: '2. Describe',
+    choose_instructor: '3. Instructor',
+    generate: 'START PROJECT',
+    error_empty_input: 'Please provide a description or an image to start.',
+    loading_title: 'PROCESSING',
+    loading_subtitle: 'Analyzing requirements...\nGenerating Flutter architecture...\nWriting clean code...',
     new_project: 'New Project',
     explorer: 'Explorer',
-    select_file_prompt: 'Select a file to view its content',
-    file_explanation: 'File Explanation',
-    learning_path: 'Learning Path',
+    select_file_prompt: 'Select a file to view code',
+    file_explanation: 'Technical Analysis',
+    learning_path: 'Implementation Guide',
     no_file_selected: 'No file selected',
-    analysis_of: 'Analysis',
-    select_file_for_analysis: 'Select a file to see TARS\'s explanation of its purpose and code.',
-    project_mission: 'Project Mission',
-    personality_tars_name: 'TARS (Interstellar)',
-    personality_google_name: 'Precise Google Engineer',
-    personality_fun_name: 'Fun & Creative Dev',
+    analysis_of: 'Analysis of',
+    select_file_for_analysis: 'Select a file to view detailed explanation of purpose and structure.',
+    project_mission: 'Project Goal',
+    personality_tars_name: 'TARS',
+    personality_google_name: 'Google Engineer',
+    personality_fun_name: 'Creative Mentor',
     draw: 'Draw',
     upload: 'Upload',
     paste: 'Paste',
     clear: 'Clear',
-    input_placeholder: 'e.g., "A simple to-do list app with categories. Users can add, check off, and delete tasks. I want a clean, minimalist design."',
-    upload_prompt: 'Drag & drop or click to upload',
-    select_file: 'Select File',
-    paste_prompt: 'Press Ctrl+V to paste an image.',
-    draw_in_modal_title: 'Draw Your App Mockup',
+    input_placeholder: 'Describe your app in detail. E.g., "A personal finance app with spending dashboard, transaction list, and editable categories. Dark modern style."',
+    upload_prompt: 'Drag images or click to upload',
+    select_file: 'Select',
+    paste_prompt: 'Ctrl+V to paste',
+    draw_in_modal_title: 'Quick Sketch',
     close: 'Close',
-    save_drawing: 'Save Drawing',
-    visualize_info: 'Use tools like Figma, Sketch, or even a photo of a napkin sketch to upload your app prototype.',
-    backend_suggestion: 'Backend Suggestion',
-    project_history: 'Project History',
-    clear_history: 'Clear History',
-    chat: 'Chat',
-    export_pdf: 'Export PDF',
-    generating_pdf: 'Generating...',
-    ask_for_changes: 'Ask for changes...',
-    apply_changes: 'Apply Changes',
-    ai_suggestion: 'AI suggests an update for',
+    save_drawing: 'Confirm',
+    visualize_info: 'Upload mockups, sketches, or diagrams to guide generation.',
+    backend_suggestion: 'Suggested Architecture',
+    project_history: 'Recent Projects',
+    clear_history: 'Clear',
+    chat: 'Assistant',
+    export_pdf: 'PDF Tutorial',
+    generating_pdf: 'Generating PDF...',
+    ask_for_changes: 'Request changes or ask questions...',
+    apply_changes: 'Apply Change',
+    ai_suggestion: 'Suggested change in',
+    personality_desc_tars: 'Logical, concise, and straight to the point. Efficiency focus.',
+    personality_desc_google: 'Industry standards, Clean Architecture, and best practices.',
+    personality_desc_fun: 'Didactic, encouraging, and focused on rapid learning.',
   },
 };
 
@@ -209,7 +215,7 @@ const App: React.FC = () => {
             };
             
             setHistory(prevHistory => {
-                const newHistory = [historyItem, ...prevHistory.filter(p => p.projectName !== project.projectName)].slice(0, 10); // Keep latest 10, prevent duplicates
+                const newHistory = [historyItem, ...prevHistory.filter(p => p.projectName !== project.projectName)].slice(0, 10);
                 localStorage.setItem('flutterFactoryHistory', JSON.stringify(newHistory));
                 return newHistory;
             });
@@ -326,7 +332,7 @@ const App: React.FC = () => {
 
     return (
         <LanguageContext.Provider value={{ t, setLocale, locale }}>
-            <div className="min-h-screen bg-blueprint-bg font-mono">
+            <div className="h-screen bg-blueprint-bg font-sans text-blueprint-text-light overflow-hidden selection:bg-blueprint-line selection:text-blueprint-bg">
                 {view === 'input' && <InputView onGenerate={handleGenerate} description={description} setDescription={setDescription} personality={personality} setPersonality={setPersonality} imagesData={imagesData} setImagesData={setImagesData} error={error} history={history} onLoadProject={handleLoadProject} onClearHistory={handleClearHistory} onDeleteItem={handleDeleteHistoryItem}/>}
                 {view === 'output' && generatedProject && fileTree && <OutputView project={generatedProject} setProject={setGeneratedProject} personality={personality} fileTree={fileTree} selectedFile={selectedFile} setSelectedFile={handleFileSelect} onReturn={handleReturnToInput} lastChangeInfo={lastChangeInfo} setLastChangeInfo={setLastChangeInfo} />}
             </div>
@@ -362,23 +368,35 @@ const SnakeGame: React.FC = () => {
 
     function main() {
         setTimeout(() => {
+            if (!canvas || !ctx) return;
             clearCanvas();
+            drawGrid();
             drawFood();
             moveSnake();
             drawSnake();
-        }, 100);
+        }, 80);
     }
 
     function clearCanvas() {
+        if (!canvas || !ctx) return;
         ctx.fillStyle = '#0a192f';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
     }
 
+    function drawGrid() {
+        if (!ctx) return;
+        ctx.strokeStyle = 'rgba(100, 255, 218, 0.03)';
+        ctx.lineWidth = 1;
+        // Drawing full grid can be expensive, skipping for performance in loading screen
+    }
+
     function drawSnakePart(part: {x: number, y: number}) {
+        if (!ctx) return;
         ctx.fillStyle = '#64ffda';
-        ctx.strokeStyle = '#0a192f';
-        ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize, gridSize);
-        ctx.strokeRect(part.x * gridSize, part.y * gridSize, gridSize, gridSize);
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = '#64ffda';
+        ctx.fillRect(part.x * gridSize, part.y * gridSize, gridSize - 2, gridSize - 2);
+        ctx.shadowBlur = 0;
     }
     
     function drawSnake() {
@@ -386,12 +404,16 @@ const SnakeGame: React.FC = () => {
     }
 
     function drawFood() {
+        if (!ctx) return;
         if(foodEaten) {
             randomFoodPosition();
             foodEaten = false;
         }
-        ctx.fillStyle = '#64ffda';
-        ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize, gridSize);
+        ctx.fillStyle = '#e06c75';
+        ctx.shadowBlur = 10;
+        ctx.shadowColor = '#e06c75';
+        ctx.fillRect(food.x * gridSize, food.y * gridSize, gridSize - 2, gridSize - 2);
+        ctx.shadowBlur = 0;
     }
 
     function moveSnake() {
@@ -404,7 +426,7 @@ const SnakeGame: React.FC = () => {
             snake.pop();
         }
         
-        if (Math.random() < 0.1) {
+        if (Math.random() < 0.05) {
             const directions = [{x: 0, y: 1}, {x: 0, y: -1}, {x: 1, y: 0}, {x: -1, y: 0}];
             const newDir = directions[Math.floor(Math.random() * directions.length)];
             if (snake.length === 1 || (newDir.x !== -direction.x && newDir.y !== -direction.y)) {
@@ -418,11 +440,11 @@ const SnakeGame: React.FC = () => {
         if (head.y < 0) head.y = Math.floor(canvas.height / gridSize) -1;
     }
 
-    const intervalId = setInterval(main, 100);
+    const intervalId = setInterval(main, 80);
     return () => clearInterval(intervalId);
   }, []);
 
-  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-30" />;
+  return <canvas ref={canvasRef} className="absolute inset-0 w-full h-full opacity-20" />;
 }
 
 const LoadingScreen: React.FC = () => {
@@ -430,9 +452,13 @@ const LoadingScreen: React.FC = () => {
     return (
       <div className="fixed inset-0 bg-blueprint-bg flex flex-col items-center justify-center z-50 overflow-hidden">
         <SnakeGame />
-        <div className="z-10 text-center">
-            <h2 className="text-2xl text-blueprint-line font-bold mb-2 tracking-widest">{t('loading_title')}</h2>
-            <p className="text-blueprint-text-light whitespace-pre-wrap">{t('loading_subtitle')}</p>
+        <div className="z-10 text-center p-8 bg-blueprint-bg/80 backdrop-blur-md rounded-xl border border-blueprint-line/20 shadow-neon">
+            <div className="mb-6 relative w-16 h-16 mx-auto">
+                <div className="absolute inset-0 border-t-2 border-blueprint-line rounded-full animate-spin"></div>
+                <div className="absolute inset-2 border-r-2 border-code-function rounded-full animate-spin" style={{animationDirection: 'reverse', animationDuration: '1.5s'}}></div>
+            </div>
+            <h2 className="text-3xl text-blueprint-line font-bold mb-4 tracking-widest">{t('loading_title')}</h2>
+            <p className="text-blueprint-text-light/80 whitespace-pre-wrap font-mono text-sm">{t('loading_subtitle')}</p>
         </div>
       </div>
     );
@@ -444,9 +470,9 @@ const LanguageSwitcher = () => {
         setLocale(lang);
     };
     return (
-        <div className="absolute top-4 right-4 flex gap-2 border border-blueprint-border rounded-md p-1">
-            <button onClick={() => switchLang('pt-br')} className={`px-3 py-1 text-sm rounded-md transition-colors ${locale === 'pt-br' ? 'bg-blueprint-line text-blueprint-bg' : 'text-blueprint-text-dark hover:text-blueprint-text-light'}`}>PT-BR</button>
-            <button onClick={() => switchLang('en')} className={`px-3 py-1 text-sm rounded-md transition-colors ${locale === 'en' ? 'bg-blueprint-line text-blueprint-bg' : 'text-blueprint-text-dark hover:text-blueprint-text-light'}`}>EN</button>
+        <div className="absolute top-6 right-6 flex gap-1 bg-blueprint-bg-light/50 p-1 rounded-lg border border-blueprint-border backdrop-blur-sm z-20">
+            <button onClick={() => switchLang('pt-br')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all ${locale === 'pt-br' ? 'bg-blueprint-line text-blueprint-bg shadow-lg' : 'text-blueprint-text-dim hover:text-blueprint-text-light'}`}>PT-BR</button>
+            <button onClick={() => switchLang('en')} className={`px-3 py-1.5 text-xs font-bold rounded-md transition-all ${locale === 'en' ? 'bg-blueprint-line text-blueprint-bg shadow-lg' : 'text-blueprint-text-dim hover:text-blueprint-text-light'}`}>EN</button>
         </div>
     )
 }
@@ -458,7 +484,7 @@ interface InputViewProps {
   personality: Personality;
   setPersonality: (p: Personality) => void;
   imagesData: { data: string, mimeType: string }[];
-  setImagesData: (data: { data: string, mimeType: string }[]) => void;
+  setImagesData: React.Dispatch<React.SetStateAction<{ data: string, mimeType: string }[]>>;
   error: string | null;
   history: ProjectHistoryItem[];
   onLoadProject: (project: ProjectHistoryItem) => void;
@@ -469,14 +495,18 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
     const { t } = useTranslation();
     const fileInputRef = React.useRef<HTMLInputElement>(null);
     const [isDrawing, setIsDrawing] = useState(false);
+    const [isDragging, setIsDragging] = useState(false);
     
     const addImageData = useCallback((newData: { data: string, mimeType: string }) => {
         setImagesData(prev => [...prev, newData]);
     }, [setImagesData]);
 
     const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        const files = e.target.files;
-        if (files) {
+        processFiles(e.target.files);
+    };
+
+    const processFiles = (files: FileList | null) => {
+         if (files) {
             for (let i = 0; i < files.length; i++) {
                 const file = files.item(i);
                 if (file && file.type.startsWith('image/')) {
@@ -494,7 +524,7 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
                 }
             }
         }
-    };
+    }
     
     const onCanvasDraw = (dataUrl: string) => {
         if(!dataUrl) return;
@@ -541,137 +571,165 @@ const InputView: React.FC<InputViewProps> = ({ onGenerate, description, setDescr
         setImagesData(prev => prev.filter((_, index) => index !== indexToRemove));
     };
 
+    const handleDragOver = (e: React.DragEvent) => { e.preventDefault(); setIsDragging(true); };
+    const handleDragLeave = (e: React.DragEvent) => { e.preventDefault(); setIsDragging(false); };
+    const handleDrop = (e: React.DragEvent) => {
+        e.preventDefault();
+        setIsDragging(false);
+        processFiles(e.dataTransfer.files);
+    };
+
     return (
-        <div className="flex h-screen">
+        <div className="flex h-screen overflow-hidden">
             {/* Left History Panel */}
-            <aside className="w-80 bg-blueprint-bg-light border-r border-blueprint-border flex flex-col p-4">
-                <div className="flex justify-between items-center mb-4 flex-shrink-0">
-                    <h2 className="text-sm font-bold uppercase tracking-wider text-blueprint-text-dark">{t('project_history')}</h2>
+            <aside className="w-72 bg-blueprint-bg-light/50 border-r border-blueprint-border flex flex-col z-10 backdrop-blur-md">
+                <div className="p-5 border-b border-blueprint-border flex justify-between items-center bg-blueprint-bg-light/80">
+                    <h2 className="text-xs font-bold uppercase tracking-widest text-blueprint-text-dim">{t('project_history')}</h2>
                     {history.length > 0 && (
                         <button
                             onClick={onClearHistory}
-                            className="flex items-center gap-2 px-3 py-1 text-xs transition-colors border border-blueprint-border text-blueprint-text-dark hover:bg-red-500/20 hover:text-red-400 rounded-md"
+                            className="text-xs text-blueprint-text-dim hover:text-red-400 transition-colors"
                         >
-                            <Icon type="trash" className="w-3 h-3" />
-                            {t('clear_history')}
+                           {t('clear_history')}
                         </button>
                     )}
                 </div>
-                <div className="flex-grow overflow-y-auto -mr-2 pr-2">
+                <div className="flex-grow overflow-y-auto p-3 space-y-2 custom-scrollbar">
                     {history.length > 0 ? (
-                        <ul className="space-y-3">
-                            {history.map((project) => (
-                                <li key={project.projectName} className="group">
-                                    <button
-                                        onClick={() => onLoadProject(project)}
-                                        className="w-full text-left p-3 rounded-md bg-blueprint-bg border border-blueprint-border hover:border-blueprint-line/50 transition-colors"
-                                    >
-                                        <div className="flex justify-between items-start">
-                                            <p className="font-semibold text-blueprint-text-light break-words pr-2">{project.projectName}</p>
-                                            <button
-                                                onClick={(e) => { e.stopPropagation(); onDeleteItem(project.projectName); }}
-                                                className="ml-2 p-1 rounded-full text-blueprint-text-dark hover:bg-red-500/20 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-opacity flex-shrink-0"
-                                                aria-label={`Delete ${project.projectName}`}
-                                            >
-                                                <Icon type="trash" className="w-4 h-4" />
-                                            </button>
-                                        </div>
-                                        <p className="text-xs text-blueprint-text-dark truncate mt-1">{project.projectDescription}</p>
-                                    </button>
-                                </li>
-                            ))}
-                        </ul>
+                        history.map((project) => (
+                            <div key={project.projectName} className="group relative">
+                                <button
+                                    onClick={() => onLoadProject(project)}
+                                    className="w-full text-left p-3 rounded-lg border border-transparent hover:bg-blueprint-bg hover:border-blueprint-line/30 transition-all duration-200 group-hover:shadow-md"
+                                >
+                                    <div className="font-semibold text-sm text-blueprint-text-light truncate mb-1">{project.projectName}</div>
+                                    <div className="text-xs text-blueprint-text-dim truncate opacity-70">{project.projectDescription}</div>
+                                </button>
+                                <button
+                                    onClick={(e) => { e.stopPropagation(); onDeleteItem(project.projectName); }}
+                                    className="absolute top-2 right-2 p-1.5 rounded-md text-blueprint-text-dim hover:bg-red-500/10 hover:text-red-400 opacity-0 group-hover:opacity-100 transition-all"
+                                >
+                                    <Icon type="trash" className="w-3 h-3" />
+                                </button>
+                            </div>
+                        ))
                     ) : (
-                        <div className="h-full flex items-center justify-center text-center text-xs text-blueprint-text-dark px-4">
-                            <p>Os projetos que você gerar aparecerão aqui.</p>
+                        <div className="text-center py-10 text-blueprint-text-dim/50 text-sm italic">
+                            <p>Histórico vazio.</p>
                         </div>
                     )}
                 </div>
             </aside>
 
             {/* Right Main Panel */}
-            <main className="flex-grow flex flex-col items-center justify-center p-8 overflow-y-auto relative">
+            <main className="flex-grow flex flex-col relative overflow-y-auto scroll-smooth">
                 <LanguageSwitcher />
-                <div className="w-full max-w-4xl">
-                  <div className="text-center">
-                    <h1 className="text-5xl font-bold mb-2 text-blueprint-text-light">{t('title')}<span className="text-blueprint-line">{t('title_factory')}</span></h1>
-                    <p className="text-blueprint-text-dark mb-8 max-w-2xl mx-auto">{t('subtitle')}</p>
-                  </div>
-                  
-                  <div className="w-full bg-blueprint-bg-light/50 p-6 rounded-lg border border-blueprint-border shadow-2xl space-y-6">
-                      
-                      <div className="space-y-2">
-                          <div className="flex items-center gap-2 group relative">
-                              <h2 className="text-sm font-bold uppercase tracking-wider text-blueprint-text-dark">{t('visualize_app')}</h2>
-                              <Icon type="info" className="w-4 h-4 text-blueprint-text-dark cursor-pointer"/>
-                              <div className="absolute bottom-full left-0 mb-2 w-64 bg-blueprint-bg-light border border-blueprint-border text-blueprint-text-light text-xs rounded-md p-2 shadow-lg opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">
-                                  {t('visualize_info')}
-                              </div>
-                          </div>
-                          <div className="bg-blueprint-bg p-3 rounded-md border-2 border-dashed border-blueprint-border min-h-[200px] w-full flex items-center justify-center relative">
-                              {imagesData.length > 0 ? (
-                                  <div className="flex flex-wrap gap-4 p-2 justify-center">
-                                      {imagesData.map((img, index) => (
-                                          <div key={index} className="relative w-32 h-32 rounded-md overflow-hidden border border-blueprint-border">
-                                              <img src={`data:${img.mimeType};base64,${img.data}`} alt={`Mockup ${index + 1}`} className="w-full h-full object-cover"/>
-                                              <button onClick={() => removeImage(index)} className="absolute top-1 right-1 p-1 rounded-full bg-red-600/80 hover:bg-red-500 text-white transition-colors">
-                                                  <Icon type="trash" className="w-4 h-4" />
-                                              </button>
-                                          </div>
-                                      ))}
-                                  </div>
-                              ) : (
-                                  <div className="text-center text-blueprint-text-dark">
-                                      <Icon type="image" className="w-16 h-16 mx-auto mb-2"/>
-                                      <p className="text-sm">{t('draw')}, {t('upload').toLowerCase()} ou {t('paste').toLowerCase()} uma ou mais imagens.</p>
-                                  </div>
-                              )}
-                          </div>
-                      </div>
+                
+                <div className="flex-grow flex flex-col items-center justify-center p-8 md:p-12">
+                    <div className="w-full max-w-5xl space-y-10">
+                        
+                        <div className="text-center space-y-4 animate-fade-in-up">
+                            <h1 className="text-6xl md:text-7xl font-black tracking-tighter text-white drop-shadow-lg">
+                                Flutter<span className="text-blueprint-line">Factory</span>
+                            </h1>
+                            <p className="text-lg text-blueprint-text-dim max-w-2xl mx-auto leading-relaxed">{t('subtitle')}</p>
+                        </div>
+                        
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+                            
+                            {/* Inputs Section */}
+                            <div className="lg:col-span-8 space-y-6">
+                                {/* Card 1: Visualize */}
+                                <div className="bg-blueprint-bg-light/40 backdrop-blur-sm border border-blueprint-border rounded-xl p-6 transition-all hover:border-blueprint-line/30 hover:shadow-glass">
+                                    <div className="flex items-center justify-between mb-4">
+                                        <h2 className="text-sm font-bold uppercase tracking-wider text-blueprint-line">{t('visualize_app')}</h2>
+                                        <div className="flex gap-2">
+                                            <button onClick={() => setIsDrawing(true)} className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded bg-blueprint-bg border border-blueprint-border hover:border-blueprint-line text-blueprint-text-light transition-all">
+                                                <Icon type="draw" className="w-3 h-3" /> {t('draw')}
+                                            </button>
+                                            <button onClick={() => fileInputRef.current?.click()} className="flex items-center gap-2 px-3 py-1.5 text-xs font-medium rounded bg-blueprint-bg border border-blueprint-border hover:border-blueprint-line text-blueprint-text-light transition-all">
+                                                <Icon type="upload" className="w-3 h-3" /> {t('upload')}
+                                            </button>
+                                        </div>
+                                        <input type="file" ref={fileInputRef} onChange={handleFileChange} className="hidden" accept="image/*" multiple />
+                                    </div>
+                                    
+                                    <div 
+                                        onDragOver={handleDragOver} onDragLeave={handleDragLeave} onDrop={handleDrop}
+                                        className={`relative rounded-lg border-2 border-dashed transition-all min-h-[160px] flex flex-col items-center justify-center p-4 ${isDragging ? 'border-blueprint-line bg-blueprint-line/5' : 'border-blueprint-border bg-blueprint-bg/50'}`}
+                                    >
+                                        {imagesData.length > 0 ? (
+                                            <div className="flex flex-wrap gap-4 justify-center w-full">
+                                                {imagesData.map((img, index) => (
+                                                    <div key={index} className="relative w-24 h-24 group rounded-lg overflow-hidden border border-blueprint-border shadow-sm">
+                                                        <img src={`data:${img.mimeType};base64,${img.data}`} alt="Upload" className="w-full h-full object-cover" />
+                                                        <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                                            <button onClick={() => removeImage(index)} className="p-1.5 bg-red-500/80 rounded-full text-white hover:bg-red-600 transition-colors">
+                                                                <Icon type="trash" className="w-4 h-4" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                ))}
+                                                <div className="w-24 h-24 flex items-center justify-center rounded-lg border-2 border-dashed border-blueprint-border hover:border-blueprint-line cursor-pointer transition-colors text-blueprint-text-dim hover:text-blueprint-line" onClick={() => fileInputRef.current?.click()}>
+                                                    <Icon type="upload" className="w-6 h-6" />
+                                                </div>
+                                            </div>
+                                        ) : (
+                                            <div className="text-center pointer-events-none">
+                                                <Icon type="image" className="w-10 h-10 mx-auto mb-3 text-blueprint-text-dim opacity-50"/>
+                                                <p className="text-sm text-blueprint-text-dim">{t('upload_prompt')}</p>
+                                                <p className="text-xs text-blueprint-text-dim/50 mt-1">{t('paste_prompt')}</p>
+                                            </div>
+                                        )}
+                                    </div>
+                                </div>
 
-                      <div className="flex flex-col gap-4">
-                           <textarea
-                              value={description}
-                              onChange={(e) => setDescription(e.target.value)}
-                              placeholder={t('input_placeholder')}
-                              className="bg-blueprint-bg border border-blueprint-border rounded-md p-3 w-full text-blueprint-text-light focus:outline-none focus:ring-2 focus:ring-blueprint-line resize-none"
-                              rows={5}
-                          />
-                          <div className="flex items-center justify-between gap-2">
-                              <div className="flex gap-2">
-                                  <button onClick={() => setIsDrawing(true)} className="flex items-center gap-2 px-4 py-2 text-sm transition-colors border border-blueprint-border text-blueprint-text-dark hover:bg-blueprint-border hover:text-blueprint-text-light rounded-md">
-                                      <Icon type={'draw'} className="w-4 h-4" /> {t('draw')}
-                                  </button>
-                                  <button onClick={() => fileInputRef.current?.click()} className="flex items-center gap-2 px-4 py-2 text-sm transition-colors border border-blueprint-border text-blueprint-text-dark hover:bg-blueprint-border hover:text-blueprint-text-light rounded-md">
-                                      <Icon type={'upload'} className="w-4 h-4" /> {t('upload')}
-                                  </button>
-                                  <input type="file" ref={fileInputRef} onChange={handleFileChange} className="hidden" accept="image/*" multiple />
-                              </div>
-                              <div className="text-sm text-blueprint-text-dark">{t('paste_prompt')}</div>
-                          </div>
-                      </div>
+                                {/* Card 2: Describe */}
+                                <div className="bg-blueprint-bg-light/40 backdrop-blur-sm border border-blueprint-border rounded-xl p-6 transition-all hover:border-blueprint-line/30 hover:shadow-glass">
+                                    <h2 className="text-sm font-bold uppercase tracking-wider text-blueprint-line mb-4">{t('describe_app')}</h2>
+                                    <textarea
+                                        value={description}
+                                        onChange={(e) => setDescription(e.target.value)}
+                                        placeholder={t('input_placeholder')}
+                                        className="w-full bg-blueprint-bg/50 border border-blueprint-border rounded-lg p-4 text-blueprint-text-light placeholder-blueprint-text-dim/40 focus:outline-none focus:border-blueprint-line focus:ring-1 focus:ring-blueprint-line transition-all resize-none h-32 font-sans leading-relaxed"
+                                    />
+                                </div>
+                            </div>
 
-                      <div>
-                           <h2 className="text-sm font-bold mb-2 uppercase tracking-wider text-blueprint-text-dark">{t('choose_instructor')}</h2>
-                          <select
-                              value={personality.id}
-                              onChange={(e) => setPersonality(PERSONALITIES.find(p => p.id === e.target.value)!)}
-                              className="bg-blueprint-bg border border-blueprint-border rounded-md p-3 w-full text-blueprint-text-light focus:outline-none focus:ring-2 focus:ring-blueprint-line"
-                          >
-                              {PERSONALITIES.map(p => <option key={p.id} value={p.id}>{t(p.name as TranslationKey)}</option>)}
-                          </select>
-                      </div>
+                            {/* Sidebar Options */}
+                            <div className="lg:col-span-4 space-y-6 h-full flex flex-col">
+                                 {/* Card 3: Personality */}
+                                 <div className="bg-blueprint-bg-light/40 backdrop-blur-sm border border-blueprint-border rounded-xl p-6 flex-grow">
+                                     <h2 className="text-sm font-bold uppercase tracking-wider text-blueprint-line mb-4">{t('choose_instructor')}</h2>
+                                     <div className="space-y-3">
+                                         {PERSONALITIES.map(p => (
+                                             <button
+                                                 key={p.id}
+                                                 onClick={() => setPersonality(p)}
+                                                 className={`w-full text-left p-4 rounded-lg border transition-all duration-200 relative overflow-hidden group ${personality.id === p.id ? 'bg-blueprint-line/10 border-blueprint-line shadow-[0_0_15px_rgba(100,255,218,0.1)]' : 'bg-blueprint-bg/50 border-blueprint-border hover:border-blueprint-text-dim/50'}`}
+                                             >
+                                                 <div className={`font-bold text-sm mb-1 ${personality.id === p.id ? 'text-blueprint-line' : 'text-blueprint-text-light'}`}>{t(p.name as TranslationKey)}</div>
+                                                 <div className="text-xs text-blueprint-text-dim leading-relaxed">
+                                                    {p.id === 'tars' ? t('personality_desc_tars') : p.id === 'google-engineer' ? t('personality_desc_google') : t('personality_desc_fun')}
+                                                 </div>
+                                                 {personality.id === p.id && <div className="absolute right-0 top-0 p-1"><div className="w-2 h-2 rounded-full bg-blueprint-line animate-pulse"></div></div>}
+                                             </button>
+                                         ))}
+                                     </div>
+                                 </div>
 
-                      <div className="pt-2">
-                          {error && <p className="text-red-400 text-center mb-4">{error}</p>}
-                          <button
-                              onClick={onGenerate}
-                              className="w-full bg-blueprint-line text-blueprint-bg font-bold py-4 rounded-md text-lg tracking-widest hover:brightness-110 transition-all transform hover:scale-[1.02]"
-                          >
-                              {t('generate')}
-                          </button>
-                      </div>
-                  </div>
+                                 <div className="pt-2">
+                                     {error && <div className="bg-red-500/10 border border-red-500/30 text-red-400 p-3 rounded-lg text-sm text-center mb-4 animate-pulse">{error}</div>}
+                                     <button
+                                         onClick={onGenerate}
+                                         className="w-full bg-blueprint-line text-blueprint-bg font-black py-4 rounded-xl text-lg tracking-widest hover:bg-white transition-all transform hover:-translate-y-1 hover:shadow-[0_0_20px_rgba(100,255,218,0.4)] active:translate-y-0 active:shadow-none"
+                                     >
+                                         {t('generate')}
+                                     </button>
+                                 </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </main>
 
@@ -692,15 +750,18 @@ const DrawModal: React.FC<{onClose: () => void, onSave: (data: string) => void}>
     }
 
     return (
-        <div className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 p-4" onClick={onClose}>
-            <div className="bg-blueprint-bg-light border border-blueprint-border rounded-lg shadow-xl p-6 w-full max-w-2xl" onClick={e => e.stopPropagation()}>
-                <h3 className="text-xl font-bold mb-4 text-blueprint-text-light">{t('draw_in_modal_title')}</h3>
-                <div className="aspect-video bg-blueprint-bg rounded-md overflow-hidden">
+        <div className="fixed inset-0 bg-black/90 backdrop-blur-sm flex items-center justify-center z-50 p-4" onClick={onClose}>
+            <div className="bg-blueprint-bg border border-blueprint-border rounded-xl shadow-2xl p-6 w-full max-w-3xl flex flex-col gap-4" onClick={e => e.stopPropagation()}>
+                <div className="flex justify-between items-center">
+                    <h3 className="text-xl font-bold text-blueprint-text-light">{t('draw_in_modal_title')}</h3>
+                    <button onClick={onClose} className="text-blueprint-text-dim hover:text-white"><Icon type="trash" className="w-5 h-5" /></button> {/* Used trash icon as generic close placeholder if x not available, or change icon component */}
+                </div>
+                <div className="aspect-video bg-blueprint-bg-light rounded-lg overflow-hidden border border-blueprint-border shadow-inner">
                     <InputCanvas width={800} height={450} onDraw={setTempDataUrl} />
                 </div>
-                <div className="flex justify-end gap-4 mt-4">
-                    <button onClick={onClose} className="px-4 py-2 rounded-md text-blueprint-text-dark border border-blueprint-border hover:bg-blueprint-border hover:text-blueprint-text-light transition-colors">{t('close')}</button>
-                    <button onClick={handleSave} className="px-4 py-2 rounded-md bg-blueprint-line text-blueprint-bg font-bold hover:brightness-110 transition-colors">{t('save_drawing')}</button>
+                <div className="flex justify-end gap-3 pt-2">
+                    <button onClick={onClose} className="px-5 py-2.5 rounded-lg text-sm font-medium text-blueprint-text-dim border border-blueprint-border hover:bg-blueprint-border/50 hover:text-white transition-colors">{t('close')}</button>
+                    <button onClick={handleSave} className="px-5 py-2.5 rounded-lg text-sm font-bold bg-blueprint-line text-blueprint-bg hover:brightness-110 shadow-neon transition-all">{t('save_drawing')}</button>
                 </div>
             </div>
         </div>
@@ -752,11 +813,10 @@ const OutputView: React.FC<OutputViewProps> = ({ project, setProject, personalit
                 printArea.innerHTML = `<div id="print-content">${htmlContent}</div>`;
                 
                 const originalTitle = document.title;
-                document.title = `${project.projectName} Tutorial`; // Set title for PDF filename suggestion
+                document.title = `${project.projectName} Tutorial`;
                 
                 window.print();
 
-                // Restore title after a short delay
                 setTimeout(() => {
                     document.title = originalTitle;
                 }, 1000);
@@ -819,33 +879,50 @@ const OutputView: React.FC<OutputViewProps> = ({ project, setProject, personalit
 
 
     return (
-        <div className="flex flex-col h-screen bg-blueprint-bg">
-            <header className="flex items-center justify-between bg-blueprint-bg-light p-2 border-b border-blueprint-border flex-shrink-0">
-                <div className="flex items-center gap-2">
-                  <h1 className="text-xl font-bold">{t('title')}<span className="text-blueprint-line">{t('title_factory')}</span></h1>
-                  <span className="text-blueprint-text-dark opacity-60">/</span>
-                  <span className="font-semibold text-blueprint-line">{project.projectName}</span>
+        <div className="flex flex-col h-screen bg-blueprint-bg overflow-hidden">
+            {/* Header */}
+            <header className="flex items-center justify-between bg-blueprint-bg-light/80 backdrop-blur-md h-16 px-6 border-b border-blueprint-border flex-shrink-0 z-20">
+                <div className="flex items-center gap-3">
+                  <div className="flex items-baseline gap-0.5">
+                      <h1 className="text-xl font-black text-white tracking-tight">Flutter</h1>
+                      <span className="text-xl font-black text-blueprint-line">Factory</span>
+                  </div>
+                  <span className="text-blueprint-border text-2xl font-light">/</span>
+                  <span className="font-medium text-blueprint-text-light text-sm bg-blueprint-bg px-3 py-1 rounded-full border border-blueprint-border">{project.projectName}</span>
                 </div>
-                 <div className="flex items-center gap-4">
+                 <div className="flex items-center gap-3">
                   <button 
                     onClick={handleExportPdf} 
                     disabled={isGeneratingPdf} 
-                    className="bg-blueprint-border text-blueprint-text-light px-4 py-1.5 rounded-md hover:bg-blueprint-line hover:text-blueprint-bg transition-colors text-sm font-bold disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="group flex items-center gap-2 px-4 py-2 rounded-md text-xs font-bold tracking-wide text-blueprint-text-dim hover:text-blueprint-text-light hover:bg-blueprint-border/50 transition-all disabled:opacity-50"
                   >
+                    <span className={`w-2 h-2 rounded-full ${isGeneratingPdf ? 'bg-yellow-400 animate-pulse' : 'bg-blueprint-text-dim group-hover:bg-blueprint-line'}`}></span>
                     {isGeneratingPdf ? t('generating_pdf') : t('export_pdf')}
                   </button>
-                  <button onClick={onReturn} className="bg-blueprint-line text-blueprint-bg px-4 py-1.5 rounded-md hover:brightness-110 transition-colors text-sm font-bold">{t('new_project')}</button>
+                  <div className="h-6 w-px bg-blueprint-border"></div>
+                  <button onClick={onReturn} className="bg-blueprint-line text-blueprint-bg px-5 py-2 rounded-md hover:bg-white transition-all text-xs font-bold uppercase tracking-wider shadow-neon">{t('new_project')}</button>
                 </div>
             </header>
-            <main className="flex-grow grid grid-cols-12 gap-px bg-blueprint-border overflow-hidden">
-                <div className="col-span-2 bg-blueprint-bg-light p-2 overflow-y-auto">
-                    <h3 className="text-xs font-bold uppercase tracking-wider text-blueprint-text-dark mb-2 px-1">{t('explorer')}</h3>
-                    <FileExplorerNode node={fileTree} selectedFile={selectedFile} onFileSelect={setSelectedFile} />
+            
+            {/* Workspace Grid */}
+            <main className="flex-grow grid grid-cols-12 min-h-0">
+                {/* Explorer Panel */}
+                <div className="col-span-2 bg-blueprint-bg-light/30 border-r border-blueprint-border flex flex-col min-h-0">
+                    <div className="p-3 border-b border-blueprint-border bg-blueprint-bg/50">
+                        <h3 className="text-[10px] font-bold uppercase tracking-widest text-blueprint-text-dim pl-2">{t('explorer')}</h3>
+                    </div>
+                    <div className="overflow-y-auto p-2 custom-scrollbar flex-grow">
+                        <FileExplorerNode node={fileTree} selectedFile={selectedFile} onFileSelect={setSelectedFile} />
+                    </div>
                 </div>
-                <div className="col-span-6 bg-blueprint-bg flex flex-col min-h-0">
-                    <CodeEditor file={selectedFile} lastChangeInfo={lastChangeInfo} />
+                
+                {/* Editor Panel */}
+                <div className="col-span-6 bg-blueprint-bg flex flex-col min-h-0 relative z-0">
+                   <CodeEditor file={selectedFile} lastChangeInfo={lastChangeInfo} />
                 </div>
-                <div className="col-span-4 bg-blueprint-bg-light flex flex-col min-h-0">
+                
+                {/* Tools Panel */}
+                <div className="col-span-4 bg-blueprint-bg-light border-l border-blueprint-border flex flex-col min-h-0 shadow-[-5px_0_15px_rgba(0,0,0,0.1)] z-10">
                     <SidePanel 
                         activeTab={activeTab}
                         setActiveTab={setActiveTab}
@@ -873,20 +950,20 @@ const FileExplorerNode: React.FC<{ node: FileTreeNode, selectedFile: ProjectFile
     };
 
     if (node.name === 'root') {
-        return <>{node.children?.map(child => <FileExplorerNode key={child.path} node={child} selectedFile={selectedFile} onFileSelect={onFileSelect} />)}</>;
+        return <div className="space-y-0.5">{node.children?.map(child => <FileExplorerNode key={child.path} node={child} selectedFile={selectedFile} onFileSelect={onFileSelect} />)}</div>;
     }
     
     const isFolder = !!node.children;
 
     if (isFolder) {
         return (
-            <div>
-                <button onClick={() => setIsOpen(!isOpen)} className="w-full flex items-center gap-1.5 text-left p-1 rounded-md hover:bg-blueprint-border/50 transition-colors">
-                    <svg className={`w-4 h-4 transition-transform text-blueprint-text-dark ${isOpen ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
-                    <Icon type="folder" className="w-5 h-5 text-yellow-500" />
-                    <span className="text-blueprint-text-light">{node.name}</span>
+            <div className="select-none">
+                <button onClick={() => setIsOpen(!isOpen)} className="w-full flex items-center gap-1.5 text-left px-2 py-1 rounded-md hover:bg-white/5 transition-colors group">
+                    <svg className={`w-3 h-3 transition-transform text-blueprint-text-dim group-hover:text-blueprint-text-light ${isOpen ? 'rotate-90' : ''}`} fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
+                    <Icon type="folder" className="w-4 h-4 text-blue-400" />
+                    <span className="text-xs text-blueprint-text-light/90 group-hover:text-white font-medium">{node.name}</span>
                 </button>
-                {isOpen && <div style={{ paddingLeft: `${(level + 1) * 12}px` }}>{node.children?.map(child => <FileExplorerNode key={child.path} node={child} selectedFile={selectedFile} onFileSelect={onFileSelect} level={level + 1} />)}</div>}
+                {isOpen && <div className="border-l border-blueprint-border/30 ml-3 pl-1">{node.children?.map(child => <FileExplorerNode key={child.path} node={child} selectedFile={selectedFile} onFileSelect={onFileSelect} level={level + 1} />)}</div>}
             </div>
         );
     } else {
@@ -894,11 +971,12 @@ const FileExplorerNode: React.FC<{ node: FileTreeNode, selectedFile: ProjectFile
         return (
             <button
                 onClick={() => onFileSelect({ path: node.path, content: node.content || '', explanation: node.explanation || '' })}
-                className={`w-full flex items-center gap-1.5 p-1 rounded-md text-left transition-colors text-blueprint-text-dark ${isSelected ? 'bg-blueprint-border text-blueprint-text-light' : 'hover:bg-blueprint-border/50'}`}
-                style={{ paddingLeft: `${(level + 1) * 12}px` }}
+                className={`w-full flex items-center gap-2 px-2 py-1.5 rounded-md text-left transition-all group ${isSelected ? 'bg-blueprint-line/10 text-blueprint-line' : 'text-blueprint-text-dim hover:bg-white/5 hover:text-blueprint-text-light'}`}
             >
-                <Icon type={getFileIcon(node.name)} className="w-5 h-5 text-blueprint-line" />
-                <span className={`${isSelected ? 'text-blueprint-text-light' : 'text-blueprint-text-dark'}`}>{node.name}</span>
+                <div className="w-4 flex justify-center">
+                    <Icon type={getFileIcon(node.name)} className={`w-3.5 h-3.5 ${isSelected ? 'text-blueprint-line' : 'text-blueprint-text-dim group-hover:text-blueprint-text-light'}`} />
+                </div>
+                <span className={`text-xs truncate ${isSelected ? 'font-bold' : 'font-normal'}`}>{node.name}</span>
             </button>
         );
     }
@@ -912,46 +990,52 @@ const SyntaxHighlighter: React.FC<{ code?: string; diff?: DiffLine[] }> = ({ cod
         if (!line) return '';
         return line
             .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-            .replace(/(\/\/.*|\/\*[\s\S]*?\*\/)/g, `<span class="text-code-comment">$1</span>`)
+            .replace(/(\/\/.*|\/\*[\s\S]*?\*\/)/g, `<span class="text-code-comment italic">$1</span>`)
             .replace(/('.*?'|".*?"|'''.*?'''|""".*?""")/gs, `<span class="text-code-string">$1</span>`)
-            .replace(new RegExp(dartKeywords, 'g'), `<span class="text-code-keyword">$1</span>`)
+            .replace(new RegExp(dartKeywords, 'g'), `<span class="text-code-keyword font-bold">$1</span>`)
             .replace(/\b([A-Z][a-zA-Z0-9<>,? ]*)\b/g, `<span class="text-code-class">$1</span>`)
             .replace(new RegExp(dartBuiltins, 'g'), `<span class="text-code-builtin">$1</span>`)
             .replace(/([a-zA-Z_][a-zA-Z0-9_]*)(?=\()/g, `<span class="text-code-function">$1</span>`)
             .replace(/\b(\d+(\.\d+)?)\b/g, `<span class="text-code-number">$1</span>`);
     }, []);
 
+    // Function to generate line numbers
+    const renderLineNumber = (num: number) => (
+        <span className="inline-block w-8 mr-4 text-right text-blueprint-text-dim/30 select-none text-xs">{num}</span>
+    );
+
     if (diff) {
         return (
-            <pre className="text-sm text-blueprint-text-light">
-                <code>
-                    {diff.map((line, i) => {
-                        const lineClasses = {
-                            added: 'bg-green-500/10',
-                            removed: 'bg-red-500/10',
-                            common: '',
-                        }[line.type];
-                        
-                        const prefix = { added: '+', removed: '-', common: ' ' }[line.type];
-
-                        return (
-                            <div key={i} className={`flex ${lineClasses}`}>
-                                <span className="w-6 text-center shrink-0 select-none text-blueprint-text-dark/50">{prefix}</span>
-                                <span className="flex-1" dangerouslySetInnerHTML={{ __html: highlight(line.content) }} />
-                            </div>
-                        );
-                    })}
-                </code>
-            </pre>
+            <div className="font-mono text-sm leading-6 overflow-auto h-full custom-scrollbar p-4">
+                {diff.map((line, i) => {
+                    const lineClasses = {
+                        added: 'bg-green-500/10 border-l-2 border-green-500',
+                        removed: 'bg-red-500/10 border-l-2 border-red-500 opacity-60',
+                        common: 'border-l-2 border-transparent',
+                    }[line.type];
+                    
+                    return (
+                        <div key={i} className={`flex ${lineClasses} px-2`}>
+                            {renderLineNumber(i + 1)}
+                            <span className="flex-1 whitespace-pre-wrap break-all" dangerouslySetInnerHTML={{ __html: highlight(line.content) }} />
+                        </div>
+                    );
+                })}
+            </div>
         );
     }
 
-    const highlightedCode = useMemo(() => highlight(code || ''), [code, highlight]);
+    const lines = (code || '').split('\n');
 
     return (
-        <pre className="text-sm text-blueprint-text-light">
-            <code dangerouslySetInnerHTML={{ __html: highlightedCode }} />
-        </pre>
+         <div className="font-mono text-[13px] leading-6 overflow-auto h-full custom-scrollbar pb-10">
+            {lines.map((line, i) => (
+                 <div key={i} className="flex hover:bg-white/5 px-4">
+                    {renderLineNumber(i + 1)}
+                    <span className="flex-1 whitespace-pre-wrap break-all text-blueprint-text-light" dangerouslySetInnerHTML={{ __html: highlight(line) || ' ' }} />
+                 </div>
+            ))}
+        </div>
     );
 };
 
@@ -968,81 +1052,45 @@ const CodeEditor: React.FC<{ file: ProjectFile | null, lastChangeInfo: { filePat
 
     if (!file) {
         return (
-            <div className="flex-grow flex items-center justify-center text-blueprint-text-dark">
-                <p>{t('select_file_prompt')}</p>
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-blueprint-text-dim opacity-40 pointer-events-none">
+                <Icon type="dart" className="w-24 h-24 mb-4" />
+                <p className="text-lg font-light">{t('select_file_prompt')}</p>
             </div>
         );
     }
 
     return (
-        <div className="flex flex-col h-full">
-            <div className="flex-shrink-0 p-2 border-b border-blueprint-border bg-blueprint-bg-light">
-                <span className="text-blueprint-text-light">{file.path}</span>
+        <div className="flex flex-col h-full bg-[#0d1b2e]"> {/* Slightly darker background for editor */}
+            <div className="flex-shrink-0 h-10 flex items-center px-4 border-b border-blueprint-border bg-blueprint-bg/80 backdrop-blur-sm sticky top-0 z-10">
+                <span className="text-xs text-blueprint-text-dim mr-2">Viewing:</span>
+                <span className="text-sm text-blueprint-line font-mono">{file.path}</span>
+                {lastChangeInfo && file.path === lastChangeInfo.filePath && (
+                     <span className="ml-4 text-[10px] bg-blue-500/20 text-blue-300 px-2 py-0.5 rounded-full">Diff View</span>
+                )}
             </div>
-            <div className="flex-grow overflow-auto p-4">
+            <div className="flex-grow overflow-hidden relative">
                 {diff ? <SyntaxHighlighter diff={diff} /> : <SyntaxHighlighter code={file.content} />}
             </div>
         </div>
     );
 };
 
-const SidePanel: React.FC<{
-    activeTab: 'analysis' | 'learning' | 'chat';
-    setActiveTab: (tab: 'analysis' | 'learning' | 'chat') => void;
-    project: GeminiProjectOutput;
-    selectedFile: ProjectFile | null;
-    chatMessages: {role: 'user' | 'model', content: string}[];
-    isAwaitingResponse: boolean;
-    onSendMessage: (message: string) => void;
-    onApplyCodeChange: (filePath: string, newContent: string) => void;
-}> = (props) => {
-    const { t } = useTranslation();
-    const { activeTab, setActiveTab, project, selectedFile, chatMessages, isAwaitingResponse, onSendMessage, onApplyCodeChange } = props;
-
-    const tabConfig = {
-        analysis: t('file_explanation'),
-        learning: t('learning_path'),
-        chat: t('chat'),
-    };
-
-    return (
-        <div className="flex flex-col h-full">
-            <div className="flex-shrink-0 border-b border-blueprint-border">
-                {(Object.keys(tabConfig) as Array<keyof typeof tabConfig>).map(tabKey => (
-                    <button 
-                        key={tabKey}
-                        onClick={() => setActiveTab(tabKey)} 
-                        className={`px-4 py-2 text-sm transition-colors ${activeTab === tabKey ? 'bg-blueprint-bg text-blueprint-line' : 'text-blueprint-text-dark hover:bg-blueprint-border'}`}
-                    >
-                        {tabConfig[tabKey]}
-                    </button>
-                ))}
-            </div>
-            <div className="flex-grow overflow-y-auto p-4 text-blueprint-text-light/90 text-sm leading-relaxed">
-                {activeTab === 'analysis' && <FileAnalysisView selectedFile={selectedFile} />}
-                {activeTab === 'learning' && <LearningPathView project={project} />}
-                {activeTab === 'chat' && (
-                    <ChatView 
-                        messages={chatMessages} 
-                        isAwaitingResponse={isAwaitingResponse} 
-                        onSendMessage={onSendMessage} 
-                        onApplyCodeChange={onApplyCodeChange}
-                    />
-                )}
-            </div>
-        </div>
-    );
-}
-
 const FileAnalysisView: React.FC<{selectedFile: ProjectFile | null}> = ({ selectedFile }) => {
     const { t } = useTranslation();
     return (
-      <div>
-          <h3 className="text-lg font-bold text-blueprint-line mb-2">{t('analysis_of')}: {selectedFile?.path || t('no_file_selected')}</h3>
+      <div className="animate-fade-in">
+          <h3 className="text-sm font-bold text-blueprint-line uppercase tracking-wider mb-4 flex items-center gap-2">
+             <Icon type="info" className="w-4 h-4"/> 
+             {t('analysis_of')}: <span className="text-white">{selectedFile?.path || '...'}</span>
+          </h3>
           {selectedFile ? (
-             <p className="whitespace-pre-wrap">{selectedFile.explanation}</p>
+             <div className="prose prose-invert prose-sm max-w-none">
+                <p className="whitespace-pre-wrap text-blueprint-text-dim leading-relaxed">{selectedFile.explanation}</p>
+             </div>
           ) : (
-             <p>{t('select_file_for_analysis')}</p>
+             <div className="text-center py-10 text-blueprint-text-dim/50 italic">
+                 {t('select_file_for_analysis')}
+             </div>
           )}
       </div>
     );
@@ -1051,26 +1099,42 @@ const FileAnalysisView: React.FC<{selectedFile: ProjectFile | null}> = ({ select
 const LearningPathView: React.FC<{project: GeminiProjectOutput}> = ({ project }) => {
     const { t } = useTranslation();
     return (
-      <div>
-          <h3 className="text-lg font-bold text-blueprint-line mb-4">{t('project_mission')}: {project.projectName}</h3>
-          <p className="mb-6 italic text-blueprint-text-dark">{project.projectDescription}</p>
-          {project.learningPath.map((step, index) => (
-              <div key={index} className="mb-6 pb-6 border-b border-blueprint-border last:border-b-0">
-                  <h4 className="font-bold text-md text-blueprint-line mb-2">{step.title}</h4>
-                  <p className="whitespace-pre-wrap mb-3">{step.explanation}</p>
-                  {step.diagram && (
-                      <div className="bg-blueprint-bg p-3 rounded-md mt-2">
-                          <pre className="text-xs text-blueprint-line/80"><code>{step.diagram}</code></pre>
-                      </div>
-                  )}
-                  {step.backendSuggestion && (
-                      <div className="bg-blueprint-bg p-3 rounded-md mt-4 border-l-4 border-blueprint-line">
-                          <h5 className="font-bold text-blueprint-line/90 text-xs uppercase tracking-wider mb-2">{t('backend_suggestion')}</h5>
-                          <p className="text-xs whitespace-pre-wrap">{step.backendSuggestion}</p>
-                      </div>
-                  )}
-              </div>
-          ))}
+      <div className="space-y-8 animate-fade-in">
+          <div>
+             <h3 className="text-sm font-bold text-blueprint-line uppercase tracking-wider mb-2">{t('project_mission')}</h3>
+             <div className="bg-blueprint-bg/50 p-4 rounded-lg border border-blueprint-border">
+                 <p className="italic text-blueprint-text-light font-medium">{project.projectDescription}</p>
+             </div>
+          </div>
+
+          <div className="relative border-l-2 border-blueprint-border ml-3 space-y-8 pb-4">
+            {project.learningPath.map((step, index) => (
+                <div key={index} className="relative pl-6 group">
+                    <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-blueprint-bg border-2 border-blueprint-border group-hover:border-blueprint-line group-hover:bg-blueprint-line transition-colors"></div>
+                    <h4 className="font-bold text-base text-white mb-2 flex items-center gap-2">
+                        <span className="text-blueprint-line opacity-60 text-xs font-mono">{(index + 1).toString().padStart(2, '0')}</span>
+                        {step.title}
+                    </h4>
+                    <p className="text-blueprint-text-dim mb-3">{step.explanation}</p>
+                    
+                    {step.diagram && (
+                        <div className="bg-[#0d1b2e] p-4 rounded-lg border border-blueprint-border overflow-x-auto my-3">
+                            <pre className="text-[10px] font-mono text-blueprint-line leading-tight">{step.diagram}</pre>
+                        </div>
+                    )}
+                    
+                    {step.backendSuggestion && (
+                        <div className="bg-blue-900/20 p-3 rounded-lg border border-blue-500/30 flex gap-3 items-start">
+                            <Icon type="folder" className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" /> {/* Using folder icon as generic backend placeholder or create server icon */}
+                            <div>
+                                <h5 className="font-bold text-blue-300 text-xs uppercase tracking-wider mb-1">{t('backend_suggestion')}</h5>
+                                <p className="text-xs text-blue-100/80">{step.backendSuggestion}</p>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            ))}
+          </div>
       </div>
     );
 };
@@ -1105,11 +1169,16 @@ const ChatView: React.FC<{
             const data = JSON.parse(jsonMatch[1]);
             if (data.filePath && data.newContent) {
                 return (
-                    <div className="mt-2 p-3 bg-blueprint-bg border border-blueprint-border rounded-md">
-                        <p className="text-xs text-blueprint-text-dark">{t('ai_suggestion')} <code className="font-bold text-blueprint-text-light">{data.filePath}</code></p>
-                        <button onClick={() => onApplyCodeChange(data.filePath, data.newContent)} className="mt-2 w-full text-center px-3 py-1.5 text-sm bg-blueprint-line text-blueprint-bg rounded-md font-bold hover:brightness-110 transition-colors">
-                            {t('apply_changes')}
-                        </button>
+                    <div className="mt-3 p-0 bg-blueprint-bg border border-blueprint-line/30 rounded-lg overflow-hidden shadow-lg">
+                        <div className="bg-blueprint-line/10 px-3 py-2 border-b border-blueprint-line/10 flex justify-between items-center">
+                            <p className="text-[10px] font-bold uppercase tracking-wider text-blueprint-line">{t('ai_suggestion')}</p>
+                            <code className="text-xs text-white">{data.filePath}</code>
+                        </div>
+                        <div className="p-3">
+                            <button onClick={() => onApplyCodeChange(data.filePath, data.newContent)} className="w-full py-2 text-xs bg-blueprint-line text-blueprint-bg rounded font-bold hover:brightness-110 transition-transform active:scale-95">
+                                {t('apply_changes')}
+                            </button>
+                        </div>
                     </div>
                 );
             }
@@ -1118,41 +1187,64 @@ const ChatView: React.FC<{
     };
 
     return (
-        <div className="h-full flex flex-col -mr-4">
-            <div className="flex-grow space-y-4 pr-4 overflow-y-auto">
+        <div className="h-full flex flex-col relative">
+            {messages.length === 0 && (
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center opacity-30 pointer-events-none">
+                    <div className="w-16 h-16 bg-blueprint-line/10 rounded-full flex items-center justify-center mb-4">
+                        <Icon type="info" className="w-8 h-8 text-blueprint-line"/>
+                    </div>
+                    <p className="max-w-[200px] text-sm">{t('ask_for_changes')}</p>
+                </div>
+            )}
+            
+            <div className="flex-grow space-y-6 pb-4 pr-2 overflow-y-auto custom-scrollbar">
                 {messages.map((msg, index) => (
-                    <div key={index} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
-                        <div className={`max-w-[85%] rounded-lg px-3 py-2 ${msg.role === 'user' ? 'bg-blueprint-line text-blueprint-bg' : 'bg-blueprint-border'}`}>
-                            <p className="whitespace-pre-wrap break-words">{msg.content.replace(/```json[\s\S]*?```/, '')}</p>
+                    <div key={index} className={`flex flex-col ${msg.role === 'user' ? 'items-end' : 'items-start'}`}>
+                        <div 
+                            className={`max-w-[90%] rounded-2xl px-4 py-3 text-sm shadow-sm ${
+                                msg.role === 'user' 
+                                ? 'bg-blueprint-line text-blueprint-bg font-medium rounded-br-none' 
+                                : 'bg-white/10 text-blueprint-text-light rounded-bl-none border border-white/5'
+                            }`}
+                        >
+                            <p className="whitespace-pre-wrap break-words leading-relaxed">{msg.content.replace(/```json[\s\S]*?```/, '')}</p>
                             {msg.role === 'model' && <CodeUpdateBlock content={msg.content} />}
                         </div>
+                        <span className="text-[10px] text-blueprint-text-dim mt-1 opacity-50 px-1">
+                            {msg.role === 'user' ? 'You' : 'TARS'}
+                        </span>
                     </div>
                 ))}
                 {isAwaitingResponse && messages[messages.length-1]?.role === 'model' && messages[messages.length-1].content === '' && (
-                    <div className="flex justify-start">
-                        <div className="bg-blueprint-border rounded-lg px-3 py-2">
-                           <div className="animate-pulse flex space-x-1.5">
-                             <div className="w-2 h-2 bg-blueprint-text-dark rounded-full"></div>
-                             <div className="w-2 h-2 bg-blueprint-text-dark rounded-full animate-delay-150"></div>
-                             <div className="w-2 h-2 bg-blueprint-text-dark rounded-full animate-delay-300"></div>
+                    <div className="flex justify-start items-center gap-2">
+                        <div className="bg-white/10 rounded-2xl rounded-bl-none px-4 py-3 border border-white/5">
+                           <div className="flex space-x-1.5">
+                             <div className="w-1.5 h-1.5 bg-blueprint-text-dim rounded-full animate-bounce"></div>
+                             <div className="w-1.5 h-1.5 bg-blueprint-text-dim rounded-full animate-bounce delay-100"></div>
+                             <div className="w-1.5 h-1.5 bg-blueprint-text-dim rounded-full animate-bounce delay-200"></div>
                            </div>
                         </div>
                     </div>
                 )}
                 <div ref={messagesEndRef} />
             </div>
-            <form onSubmit={handleSubmit} className="flex-shrink-0 mt-4 pr-4">
-                <div className="flex items-center gap-2">
+            
+            <form onSubmit={handleSubmit} className="flex-shrink-0 mt-2 pt-4 border-t border-blueprint-border">
+                <div className="relative">
                     <input 
                         type="text"
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder={t('ask_for_changes')}
-                        className="flex-grow bg-blueprint-bg border border-blueprint-border rounded-md p-2 w-full text-blueprint-text-light focus:outline-none focus:ring-2 focus:ring-blueprint-line"
+                        className="w-full bg-blueprint-bg/50 border border-blueprint-border rounded-xl py-3 pl-4 pr-12 text-blueprint-text-light focus:outline-none focus:border-blueprint-line focus:ring-1 focus:ring-blueprint-line transition-all shadow-inner text-sm"
                         disabled={isAwaitingResponse}
                     />
-                    <button type="submit" disabled={isAwaitingResponse || !input.trim()} className="p-2 bg-blueprint-line text-blueprint-bg rounded-md disabled:opacity-50 hover:brightness-110 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                    <button 
+                        type="submit" 
+                        disabled={isAwaitingResponse || !input.trim()} 
+                        className="absolute right-2 top-1.5 p-1.5 bg-blueprint-line text-blueprint-bg rounded-lg disabled:opacity-30 disabled:grayscale hover:brightness-110 transition-all"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transform rotate-90" viewBox="0 0 20 20" fill="currentColor">
                           <path d="M10.894 2.553a1 1 0 00-1.788 0l-7 14a1 1 0 001.169 1.409l5-1.429A1 1 0 009 15.571V11a1 1 0 112 0v4.571a1 1 0 00.725.962l5 1.428a1 1 0 001.17-1.408l-7-14z" />
                         </svg>
                     </button>
@@ -1161,5 +1253,54 @@ const ChatView: React.FC<{
         </div>
     );
 };
+
+const SidePanel: React.FC<{
+    activeTab: 'analysis' | 'learning' | 'chat';
+    setActiveTab: (tab: 'analysis' | 'learning' | 'chat') => void;
+    project: GeminiProjectOutput;
+    selectedFile: ProjectFile | null;
+    chatMessages: {role: 'user' | 'model', content: string}[];
+    isAwaitingResponse: boolean;
+    onSendMessage: (message: string) => void;
+    onApplyCodeChange: (filePath: string, newContent: string) => void;
+}> = (props) => {
+    const { t } = useTranslation();
+    const { activeTab, setActiveTab, project, selectedFile, chatMessages, isAwaitingResponse, onSendMessage, onApplyCodeChange } = props;
+
+    const tabConfig = {
+        analysis: t('file_explanation'),
+        learning: t('learning_path'),
+        chat: t('chat'),
+    };
+
+    return (
+        <div className="flex flex-col h-full">
+            <div className="flex-shrink-0 border-b border-blueprint-border flex">
+                {(Object.keys(tabConfig) as Array<keyof typeof tabConfig>).map(tabKey => (
+                    <button 
+                        key={tabKey}
+                        onClick={() => setActiveTab(tabKey)} 
+                        className={`flex-1 py-3 text-xs font-bold uppercase tracking-wider transition-all relative overflow-hidden ${activeTab === tabKey ? 'text-blueprint-line bg-blueprint-bg/50' : 'text-blueprint-text-dim hover:text-blueprint-text-light hover:bg-white/5'}`}
+                    >
+                        {tabConfig[tabKey]}
+                        {activeTab === tabKey && <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blueprint-line shadow-[0_-2px_10px_rgba(100,255,218,0.5)]"></div>}
+                    </button>
+                ))}
+            </div>
+            <div className="flex-grow overflow-y-auto p-5 text-blueprint-text-light/90 text-sm leading-relaxed custom-scrollbar">
+                {activeTab === 'analysis' && <FileAnalysisView selectedFile={selectedFile} />}
+                {activeTab === 'learning' && <LearningPathView project={project} />}
+                {activeTab === 'chat' && (
+                    <ChatView 
+                        messages={chatMessages} 
+                        isAwaitingResponse={isAwaitingResponse} 
+                        onSendMessage={onSendMessage} 
+                        onApplyCodeChange={onApplyCodeChange}
+                    />
+                )}
+            </div>
+        </div>
+    );
+}
 
 export default App;
