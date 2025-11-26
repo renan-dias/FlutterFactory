@@ -44,17 +44,27 @@ export const generateFlutterProject = async (
       },
     });
 
-    const jsonString = response.text.trim();
+    const jsonString = response.text?.trim();
     // Basic validation to ensure it's a JSON object
-    if (!jsonString.startsWith('{') || !jsonString.endsWith('}')) {
+    if (!jsonString || !jsonString.startsWith('{') || !jsonString.endsWith('}')) {
        throw new Error('Invalid JSON response from API.');
     }
     const parsedResponse = JSON.parse(jsonString);
     return parsedResponse as GeminiProjectOutput;
 
-  } catch (error) {
+  } catch (error: any) {
     console.error('Error generating project:', error);
-    throw new Error('Failed to generate project. Please check your API key and try again.');
+    
+    const errorMessage = error.message || JSON.stringify(error);
+
+    if (errorMessage.includes('429') || errorMessage.includes('Quota exceeded') || errorMessage.includes('RESOURCE_EXHAUSTED')) {
+        const isPt = locale === 'pt-br';
+        throw new Error(isPt 
+            ? 'Limite de cota da API excedido. Isso pode ocorrer se você estiver no plano gratuito ou se a região não for suportada. Aguarde um momento e tente novamente.' 
+            : 'API quota exceeded. This can happen if you are on the free tier or the region is not supported. Please wait a moment and try again.');
+    }
+
+    throw new Error(locale === 'pt-br' ? 'Falha ao gerar o projeto. Verifique sua chave de API.' : 'Failed to generate project. Check your API key.');
   }
 };
 
@@ -137,14 +147,22 @@ Project Context:
 ${projectContext}`;
 
   try {
-    // Using a more powerful model for this complex generation task
+    // Using gemini-2.5-flash which is generally more available and has higher free tier quotas than pro models
     const response = await ai.models.generateContent({
-      model: 'gemini-2.5-pro', 
+      model: 'gemini-2.5-flash', 
       contents: prompt,
     });
-    return response.text;
-  } catch (error) {
+    return response.text || '';
+  } catch (error: any) {
     console.error('Error generating tutorial:', error);
+    
+    const errorMessage = error.message || JSON.stringify(error);
+    if (errorMessage.includes('429') || errorMessage.includes('Quota exceeded')) {
+        throw new Error(locale === 'pt-br' 
+            ? 'Limite de cota excedido ao gerar o tutorial. Tente novamente em alguns instantes.' 
+            : 'Quota exceeded while generating tutorial. Please try again later.');
+    }
+    
     throw new Error('Failed to generate tutorial content.');
   }
 };
